@@ -1,0 +1,357 @@
+
+body {font-family: 'Open Sans', sans-serif;}
+html {scroll-behavior: smooth;}
+
+/* start header */
+
+.navbar.scrolled {background-color: rgba(0 ,0 ,0 ,0.8) !important ;}
+
+.navbar-dark .navbar-brand {color: rgba(255,255,255,.55);}
+
+/* end header */
+
+/* start landing */
+.landing {
+    background: url(../img/landing.png) no-repeat top center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.landing .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0 ,0 , 0.6);
+}
+
+.landing .mask .row {margin-top: 25vh;}
+
+@media (max-width:991px) {
+    .landing .mask .row {margin-top: 12vh;}
+}
+
+.landing .main-pargraph {position: relative;font-weight: 400;}
+
+.landing .main-pargraph::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #fff;
+}
+
+@media (max-width:991px) {.landing .main-pargraph::after {left: 50%;transform: translatex(-50%);}}
+
+.landing h1 {font-size: 60px;}
+
+.landing span {color: #ff8b38;}
+
+.landing .btn-outline-warning {color: #ff8b38;border-color: #ff8b38;}
+
+.landing .btn-outline-warning:hover {color: #000;background-color: #ff8b38;}
+
+.landing form {background-color: #fff;width: 360px;overflow: hidden;}
+
+.landing form h3 {background-color: #f5f5f5;font-weight: 600;padding: 14px;}
+
+.landing form .form-control {border: none;border-bottom: 2px solid #ccc;margin-bottom: 40px;}
+
+.landing form .form-control:focus {box-shadow:none}
+
+.landing form input[type="button"] {background-color: #ff8b38;padding: 13px;}
+
+/* end landing */
+
+/* start social */
+.social {background-color: #fff;}
+
+.social p {color: #a1a1a1; line-height: 1.2;}
+
+.social svg {color: #ccc;transition: 0.3s;}
+
+.social svg:first-child:hover {color: #1877f2}
+
+.social svg:nth-child(2):hover {color: #dd4b39}
+
+.social svg:nth-child(3):hover {color: #1da1f2}
+
+.social svg:nth-child(4):hover {color: #fd1d1d}
+
+.social svg:nth-child(5):hover {color: #e60023}
+
+.social svg:nth-child(6):hover {color: #eb4924}
+
+.social svg:last-child:hover {color: #f26522}
+
+/* end social */
+
+/* start tabs */
+.tab-section {
+    background-color: #eee;
+}
+
+.tab-section ul li {
+    padding: 40px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    background-color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-section ul li.active,.tab-section ul li:hover {background-color: #ff8b38;}
+
+.tab-section .btn-warning {background-color: #ff8b38;}
+
+.tab-section .tabs-content .lead {font-size: 1.15rem; color: #a1a1a1;}
+
+.tab-section .tabs-content > div:not(:first-child) {display: none;}
+/* end tabs */
+
+/* start sublist */
+
+.sublist {background-color: #fff;}
+
+.sublist p {color: #a1a1a1;}
+
+.sublist h4::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ff8b38;
+}
+
+@media (max-width:991px) {.sublist h4::after {left: 50%;transform: translatex(-50%);}}
+
+.sublist .content h5 {color:#31708f;}
+
+.sublist .download svg,.sublist .upload svg {
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    color: #ff8b38;
+    border: 2px solid #ff8b38;
+}
+
+/* end sublist */
+
+/* start standard_picture */
+.standard_picture {background-color: #eee;}
+
+.standard_picture p {color: #a1a1a1;}
+
+.standard_picture h4::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ff8b38;
+}
+
+@media (max-width:991px) {.standard_picture h4::after {left: 50%;transform: translatex(-50%);}}
+/* end standard_picture */
+
+/* start WHY THIS IS AWESOME */
+.awesome {background-color: #fff;}
+
+.awesome h2 {font-size: 50px; font-weight: 400;}
+
+.awesome h2::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ff8b38;
+    
+}
+
+.awesome p {color: #a1a1a1;}
+
+.awesome svg {color: #ff8b38; border: 2px solid #ff8b38; width: 50px; height: 50px; padding: 8px;}
+/* end WHY THIS IS AWESOME */
+
+/* start pricing */
+
+.pricing {background-color: #eee;}
+
+.pricing h2 {font-size: 40px; font-weight: 400;}
+
+.pricing h2::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ff8b38;   
+}
+
+.pricing p {color: #a1a1a1;}
+
+.pricing .row .col-lg-4:first-child,.pricing .row .col-lg-4:last-child {margin-top: 3.5rem;}
+
+.pricing .row .head {background-color: #333; border-bottom: 4px solid #ff8b38;}
+
+.pricing .row .head h3 {border-bottom: 1px solid #fff;} 
+
+.pricing .row .head span:first-of-type {font-size: 75px; width: fit-content; margin: auto;}
+
+.pricing .row .head span:first-of-type::after {
+    position: absolute;
+    content: "$";
+    left: -15px;
+    bottom: 5px;
+    font-size: 30px;
+}
+
+
+.pricing .row .head span:nth-of-type(2) {color: #a1a1a1; font-style: italic;}
+
+.pricing .row .popular span:last-of-type {background-color: #ff8b38;}
+
+.pricing ul {background-color: #fff;color: #8c8c8c;}
+
+.pricing ul button,
+.pricing ul button:hover,
+.pricing ul button:focus {background-color: #ff8b38; border: none;box-shadow: none;}
+
+.pricing ul li {border-bottom: 1px solid #F5F5F5;}
+
+/* end pricing */
+
+/* start customers */
+
+.customers {background-color: #fff;}
+
+.customers h2 {font-size: 40px; font-weight: 400;}
+
+.customers h2::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ff8b38;   
+}
+
+.customers p {color: #a1a1a1;}
+
+.customers .row p {background-color: #F5F5F5;}
+
+.customers .row p::after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    left: 25px;
+    border: 15px solid;
+    border-color: #F5F5F5 transparent transparent transparent;
+}
+
+.customers .row .info span {color: #a1a1a1;}
+
+/* end customers */
+
+/* start stylish-design */
+.stylish-design {
+    background: url(../img/stylish.png) no-repeat center fixed;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+
+.stylish-design .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 ,0 ,0 , 0.7);
+    display: flex;
+    align-items: center;
+}
+
+
+.stylish-design h2 {font-size: 40px; font-weight: 400;}
+
+.stylish-design h2::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #fff;   
+}
+
+.stylish-design p {color: #a9aaac;}
+
+.stylish-design button, 
+.stylish-design button:hover,
+.stylish-design button:focus {background-color: #ff8b38; border: none; box-shadow: none;}
+
+/* end stylish-design */
+
+/* start contact */
+.contact {background-color: #fff;}
+
+.contact h2 {font-size: 40px; font-weight: 400;}
+
+.contact h2::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #ff8b38;   
+}
+
+.contact p {color: #a1a1a1;}
+
+.contact .row input,
+.contact .row textarea {border: none;border-bottom: 1px solid #e0e0e0; border-radius:0;}
+
+.contact .row textarea {height: 160px;}
+
+.contact .row input.form-control:focus {box-shadow: none;}
+
+.contact .row button {width: fit-content; background-color: #ff8b38; border: none;}
+
+.contact .row button:focus {box-shadow: none;}
+/* end contact */
+
+
+/* start footer */
+footer {background-color: #000;}
+/* end footer */
+
+/* start group  */
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.landing .mask,
+.tab-section .btn-warning,
+.pricing .row .head,
+.stylish-design .mask,
+footer {color: #fff;}
+
+
+/* end group  */
